@@ -1,0 +1,42 @@
+[
+  {
+    "name": "fee_reminder_v1",
+    "language": "en",
+    "category": "UTILITY",
+    "body": "Dear parent, this is a reminder from {{1}}. The fee of {{2}} for {{3}} is due on {{4}}. Please pay on time to avoid a late fee.",
+    "example": ["Green Valley School", "Rs 2,500", "Rahul Kumar", "10 Nov 2026"],
+    "footer": "This is an automated message"
+  },
+  {
+    "name": "payment_receipt_v1",
+    "language": "en",
+    "category": "UTILITY",
+    "body": "Payment received. {{1}} has received your payment of {{2}} for {{3}}. Your receipt number is {{4}}. Please keep it for your records. Thank you.",
+    "example": ["Green Valley School", "Rs 2,500", "Rahul Kumar", "RCPT-1042"]
+  },
+  {
+    "name": "invoice_reminder_v1",
+    "language": "en",
+    "category": "UTILITY",
+    "body": "Hello {{1}}, invoice {{2}} for {{3}} is due on {{4}}. Tap the button below to view and pay it.",
+    "example": ["Asha", "INV-2026-031", "Rs 4,999", "15 Nov 2026"],
+    "buttons": [
+      { "type": "URL", "text": "View invoice", "url": "https://example.com/billing?invoice={{1}}", "example": "https://example.com/billing?invoice=INV-2026-031" }
+    ]
+  },
+  {
+    "name": "new_lead_alert_v1",
+    "language": "en",
+    "category": "UTILITY",
+    "body": "New enquiry from the website. Name: {{1}}. Organisation: {{2}}. Phone: {{3}}. Message: {{4}}. Please follow up soon.",
+    "example": ["Rakesh Sharma", "Sunrise Public School", "+91 98765 43210", "We would like a demo"],
+    "buttons": [{ "type": "URL", "text": "Open leads", "url": "https://example.com/admin/leads" }]
+  },
+  {
+    "name": "login_otp_v1",
+    "language": "en",
+    "category": "AUTHENTICATION",
+    "codeExpiryMinutes": 10,
+    "buttonText": "Copy code"
+  }
+]

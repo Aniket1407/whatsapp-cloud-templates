@@ -1,0 +1,27 @@
+{
+  "name": "whatsapp-cloud-templates",
+  "version": "0.1.0",
+  "description": "Validate, submit, sync and send WhatsApp Cloud API message templates — with Meta's template rules checked before you hit the API.",
+  "keywords": ["whatsapp", "whatsapp-cloud-api", "whatsapp-business", "meta", "message-templates", "otp", "notifications"],
+  "license": "MIT",
+  "author": "Aniket Sharma",
+  "repository": { "type": "git", "url": "git+https://github.com/Aniket1407/whatsapp-cloud-templates.git" },
+  "bugs": { "url": "https://github.com/Aniket1407/whatsapp-cloud-templates/issues" },
+  "homepage": "https://github.com/Aniket1407/whatsapp-cloud-templates#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "bin": { "wa-templates": "./dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test build-test/test/*.test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
